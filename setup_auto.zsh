@@ -9,15 +9,28 @@ NVM_DIR="$APP_GIT/nvm"
 CWD=$(pwd)
 
 ## Snap Applications ##
-sudo snap install -y chromium
-sudo snap install -y code --classic
-sudo snap install -y aptitude
-sudo snap install -y spotify
-sudo snap install -y discord
+declare -a snaps=(
+    "chromium"
+    "code"
+    "spotify"
+    "discord"
+)
+
+for i in "${snaps[@]}"
+do
+    snap install "$i"
+done
 
 ## Apt Packages ##
-sudo apt install -y cmake
-sudo apt install -y curl
+declare -a apts=(
+    "cmake"
+    "curl"
+)
+
+for i in "${apts[@]}"
+do
+    apt --ignore-missing install "$i"
+done
 
 ## Node Version Manager ##
 export NVM_DIR="$APP_GIT/.nvm" && (
@@ -34,7 +47,6 @@ sudo apt install -y terminator
 #sudo update-alternatives --config x-terminal-emulator
 sudo apt install -y fonts-powerline
 sudo apt install -y zsh
-chsh -s $(which zsh)
 
 ZSH="$APP_GIT/oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 cp "$CWD/zshrc" "$HOME/.zshrc"
