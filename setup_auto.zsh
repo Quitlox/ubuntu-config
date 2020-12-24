@@ -38,6 +38,7 @@ chsh -s $(which zsh)
 
 ZSH="$APP_GIT/oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 cp "$CWD/zshrc" "$HOME/.zshrc"
+source "$HOME/.zshrc"
 
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 eval base16_tomorrow-night-eighties
