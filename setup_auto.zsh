@@ -6,7 +6,7 @@ APP_GIT="$HOME/applications/git"
 NVM_DIR="$APP_GIT/nvm"
 
 ## Iintialize ##
-cd ~/
+CWD=$(pwd)
 
 ## Snap Applications ##
 sudo snap install -y chromium
@@ -20,7 +20,7 @@ sudo apt install -y cmake
 sudo apt install -y curl
 
 ## Node Version Manager ##
-export NVM_DIR="$HOME/.nvm" && (
+export NVM_DIR="$APP_GIT/.nvm" && (
   git clone https://github.com/nvm-sh/nvm.git "$NVM_DIR"
   cd "$NVM_DIR"
   git checkout `git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1)`
@@ -29,13 +29,18 @@ nvm install node
 
 
 ## Shell ##
+
 sudo apt install -y terminator
 #sudo update-alternatives --config x-terminal-emulator
 sudo apt install -y fonts-powerline
 sudo apt install -y zsh
 chsh -s $(which zsh)
+
 ZSH="$APP_GIT/oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
+cp "$CWD/zshrc" "$HOME/.zshrc"
+
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+eval base16_tomorrow-night-eighties
 
 ## VSCode Extensions ##
 
