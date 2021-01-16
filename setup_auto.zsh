@@ -43,15 +43,25 @@ nvm install node
 
 ## Shell ##
 
-sudo apt install -y terminator
-#sudo update-alternatives --config x-terminal-emulator
+# Terminal Font: Powerline Font
 sudo apt install -y fonts-powerline
+
+# Terminal: Terminator
+sudo apt install -y terminator
+
+# Shell: ZSH
 sudo apt install -y zsh
 
+# Shell Manager: Oh My Zsh
 ZSH="$APP_GIT/oh-my-zsh" sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" --unattended
 cp "$CWD/zshrc" "$HOME/.zshrc"
 source "$HOME/.zshrc"
 
+# Oh My Zsh - Custom Plugin: zsh-syntax-highlighting
+# see: https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
+# Terminal: Color Scheme
 git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
 eval base16_tomorrow-night-eighties
 
