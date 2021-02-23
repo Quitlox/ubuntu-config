@@ -68,3 +68,13 @@ make custom git repo for katoolin3 and change color of installed packages
 
 make git repo for zsh setup
 
+## Hacking tools
+
+# Driller based on fuzzing and symbolic code analysis
+https://github.com/shellphish/fuzzer
+- install qemu & driller
+
+# IDA64 (Binary reverse-engineering)
+install ida64
+- sudo ln /home/applications/ida -> /usr/local/bin/ida
+
