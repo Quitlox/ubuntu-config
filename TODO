@@ -1,10 +1,31 @@
-Applications to install:
-
+Dev tools:
 cargo/rust
 docker
 jupyter/anaconda
-electrum
+
+Command line appications:
 git
+tree
+htop
+nano
+vim
+
+Desktop applications (flatpak/snap?):
+electrum
+firefox
+vscodium
+discord
+spotify
+vlc
+jetbrains toolbox
+virtualbox
+
+Desktop Tools:
+baobab
+
+Drivers:
+wacom
+oneplus airbuds? JBL?
 
 Hacking tools from source:
 sqlmap
