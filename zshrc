@@ -70,7 +70,6 @@ HIST_STAMPS="yyyy-mm-dd"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
 	git
-	autoenv
 	cabal
 	cake
 	cargo
@@ -121,9 +120,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
-
-# Custom: Auto Env (Python)
-source ~/.autoenv/activate.sh
 
 # Custom: Cheat
 export EDITOR="/usr/bin/nano"

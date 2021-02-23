@@ -1,3 +1,11 @@
+Applications to install:
+
 cargo/rust
 docker
 jupyter/anaconda
+electrum
+git
+
+Hacking tools from source:
+sqlmap
+rsactftool
