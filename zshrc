@@ -137,3 +137,6 @@ export PATH=$PATH:/home/quitlox/applications/local
 export NVM_DIR="$APP_GIT/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Custom: gitignore.io
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
