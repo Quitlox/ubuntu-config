@@ -51,5 +51,12 @@ Ubuntu Fixes:
 - Enable touchscreen scrolling in Firefox:
   https://askubuntu.com/a/994483
 
+GNOME Tweaks:
+- Exentions: Block caribou
+  Disable on-screen keyboard
+- Keyboard & Mouse
+        > Additional Layout Options
+                - Make Caps Lock an additional Esc
+
 Aliases:
 - gp = git pull
