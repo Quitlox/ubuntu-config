@@ -2,6 +2,7 @@ Dev tools:
 cargo/rust
 docker
 jupyter/anaconda
+nvm
 
 Command line appications:
 git
@@ -45,3 +46,10 @@ Why do I need Windows:
 - Proctoring?
 - Adobe CC
 - Microsoft Office, use 365?
+
+Ubuntu Fixes:
+- Enable touchscreen scrolling in Firefox:
+  https://askubuntu.com/a/994483
+
+Aliases:
+- gp = git pull
