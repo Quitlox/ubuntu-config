@@ -5,11 +5,11 @@
   },
   // Window Splitting
   {
-    "key": "ctrl+w -",
+    "key": "ctrl+w b",
     "command": "workbench.action.splitEditorDown"
   },
   {
-    "key": "ctrl+w \\",
+    "key": "ctrl+w v",
     "command": "workbench.action.splitEditorRight"
   },
   // Group Navigation

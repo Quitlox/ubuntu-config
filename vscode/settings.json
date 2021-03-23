@@ -69,6 +69,10 @@
       "before": ["<leader>", "g", "s"],
       "commands": ["workbench.action.gotoSymbol"]
     },
+    {
+      "before": ["<leader>", "g", "o"],
+      "commands": ["editor.action.organizeImports"]
+    },
     // Move Editors
     {
       "before": ["<leader>", "b", "H"],
@@ -105,11 +109,11 @@
     },
     // Opening & Closing Editors
     {
-      "before": ["<leader>", "b", "D"],
+      "before": ["<leader>", "b", "o"],
       "commands": ["workbench.action.closeOtherEditors"]
     },
     {
-      "before": ["<leader>", "b", "d"],
+      "before": ["<leader>", "b", "c"],
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
@@ -124,19 +128,15 @@
     },
     // Files
     {
-      "before": ["<leader>", "f", "f"],
-      "commands": ["workbench.action.files.openFile"]
-    },
-    {
       "before": ["<leader>", "f", "r"],
       "commands": ["workbench.action.openRecent"]
     },
     {
-      "before": ["<leader>", "f", "s"],
+      "before": ["<leader>", "f", "w"],
       "commands": ["workbench.action.files.save"]
     },
     {
-      "before": ["<leader>", "f", "S"],
+      "before": ["<leader>", "f", "W"],
       "commands": ["workbench.action.files.saveAll"]
     },
     {
@@ -155,9 +155,18 @@
       "before": ["<leader>", "r", "f"],
       "commands": ["fileutils.renameFile"]
     },
+    // UI Toggles
     {
-      "before": ["leader", "f", "w"],
-      "commands": ["workbench.action.files.save"]
+      "before": ["<leader>", "T", "f"],
+      "commands": ["workbench.action.toggleFullScreen"]
+    },
+    {
+      "before": ["<leader>", "T", "t"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "T", "a"],
+      "commands": ["workbench.action.toggleActivityBarVisibility"]
     },
     // Error Markers
     {
